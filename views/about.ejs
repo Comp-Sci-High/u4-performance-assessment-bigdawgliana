@@ -1,0 +1,48 @@
+<!--https://chatgpt.com/share/67a03624-cb2c-800f-8c90-7d6bb2ea2648-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - Liana.co</title>
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>liana</h1>
+        </div>
+        <nav>
+            <a href="/" class="nav-link">home</a>
+            <a href="/about" class="nav-link">about me</a>
+        </nav>
+    </header> 
+
+    <main class="container">
+        <!-- Left Section (Description) -->
+        <section class="left-section">
+            <p class="description">
+            "know yourself, know your worth - Drake"  
+            </p>
+        </section>
+
+        <!-- Middle Divider -->
+        <div class="divider"></div>
+
+        <!-- Right Section (Cards) -->
+
+        
+        <section class="right-section">
+            <% for(let i = 0; i < items.length; i++ ) { %>
+            <div class="card">
+                <div class="card-content">
+                    <a href="<%=items[i].path%>"><img src="<%=items[i].image%>" alt=""></a>
+                    <h3><%=items[i].name%></h3>
+                    <p><%=items[i].rating%></p>
+                </div>
+            </div>
+        <% } %>
+        </section>
+    </main>
+</body>
+</html>

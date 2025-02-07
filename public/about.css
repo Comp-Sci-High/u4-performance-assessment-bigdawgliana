@@ -1,0 +1,148 @@
+/* https://chatgpt.com/share/67a03624-cb2c-800f-8c90-7d6bb2ea2648
+
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: pink;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo h1:hover {
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: pink;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Left Section (Description) */
+.left-section {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #fff;
+    max-width: 450px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.description:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Middle Divider */
+.divider {
+    width: 2px;
+    height: 350px;
+    background: linear-gradient(to bottom, pink, #fff);
+}
+
+/* Right Section (Cards) */
+.right-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 320px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: pink;
+}
+
+.card p {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px pink;
+}
+
+.card:hover img {
+    transform: rotate(5deg) scale(1.05);
+}
